@@ -28,8 +28,9 @@ function DemoApp (): JSX.Element {
 	// Pass the basic embed configurations to the embedded component to bootstrap the report on first load
     // Values for properties like embedUrl, accessToken and settings will be set on click of button
 	const [sampleReportConfig, setReportConfig] = useState<models.IReportEmbedConfiguration>({
+		id: 'f40988a7-37ba-47eb-9cfa-3aecbb5aefb9',
 		type: 'report',
-		embedUrl: undefined,
+		embedUrl: "https://app.powerbi.com/reportEmbed?reportId=f40988a7-37ba-47eb-9cfa-3aecbb5aefb9&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLVVTLU5PUlRILUNFTlRSQUwtRS1QUklNQVJZLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0IiwiZW1iZWRGZWF0dXJlcyI6eyJ1c2FnZU1ldHJpY3NWTmV4dCI6dHJ1ZSwiZGlzYWJsZUFuZ3VsYXJKU0Jvb3RzdHJhcFJlcG9ydEVtYmVkIjp0cnVlfX0%3d",
 		tokenType: models.TokenType.Embed,
 		accessToken: undefined,
 		settings: undefined,
